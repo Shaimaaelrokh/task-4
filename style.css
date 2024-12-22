@@ -1,0 +1,115 @@
+/* General styles */
+body {
+        background-image: url(pexels-gochrisgoxyz-1477166.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /* Center the logo */
+    .logooo img {
+        width: 200px;
+        display: block;
+        margin: 5px auto;
+    }
+    
+    /* Logo section styling */
+    .logo {
+        display: flex; /* Use Flexbox for alignment */
+        justify-content: center;
+        gap: 20px; /* Space between items */
+        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    }
+    
+    /* Image container */
+    .image-container {
+        position: relative;
+        width: 350px;
+        margin: 20px;
+        overflow: hidden; /* Ensures zoomed images stay within their container */
+        border-radius: 10px; /* Ensures rounded corners for the image container */
+    }
+    
+    /* Images */
+    .image-container img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s ease; /* Smooth zoom effect */
+    }
+    
+    .image-container:hover img {
+        transform: scale(1.1); /* Zoom in when hovered */
+    }
+    
+    /* Overlay content */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+    }
+    
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+    
+    .overlay h1 {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+    
+    .overlay p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    /* Sale and button styles */
+    .sale {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .sale .new {
+        color: aliceblue;
+        font-size: 18px;
+    }
+    
+    .sale .old {
+        color: dimgrey;
+        text-decoration: line-through dashed;
+        margin-left: 10px;
+    }
+    
+    button {
+        display: block;
+        width: 35%;
+        height: 50px;
+        margin: 10px auto;
+        outline: none;
+        border: none;
+        border-radius: 23px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: dodgerblue;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    
